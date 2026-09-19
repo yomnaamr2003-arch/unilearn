@@ -1,0 +1,30 @@
+:root {
+  /* Colors — academic catalog palette */
+  --color-bg: #FAF7F0;
+  --color-surface: #FFFFFF;
+  --color-ink: #1E1B16;
+  --color-ink-muted: #6B6459;
+  --color-rule: #DDD5C7;
+  --color-accent: #7A3B2E;
+  --color-accent-soft: #F1E4DC;
+
+  /* Department accent colors */
+  --dept-cs: #2E5A4C;
+  --dept-eng: #7A3B2E;
+  --dept-business: #4A4A7A;
+
+  /* Fonts */
+  --font-display: 'Fraunces', serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --font-body: 'Space Grotesk', sans-serif;
+
+  /* Spacing scale */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 3rem;
+  --space-xl: 5rem;
+
+  --radius: 4px;
+  --max-width: 1100px;
+}
