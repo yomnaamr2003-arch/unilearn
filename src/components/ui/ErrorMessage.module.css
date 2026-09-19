@@ -1,0 +1,19 @@
+.wrapper {
+  text-align: center;
+  padding: var(--space-xl) 0;
+}
+
+.text {
+  color: var(--color-accent);
+  margin-bottom: var(--space-sm);
+}
+
+.button {
+  background: var(--color-dark);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-family: var(--font-body);
+}
