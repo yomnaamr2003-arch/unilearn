@@ -1,0 +1,115 @@
+.wrapper {
+  padding: var(--space-xl) var(--space-md);
+  max-width: 620px;
+}
+
+.header {
+  margin-bottom: var(--space-lg);
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  margin-bottom: var(--space-xs);
+}
+
+.subtitle {
+  color: var(--color-ink-muted);
+}
+
+.form {
+  background: var(--color-surface);
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.field label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.field input,
+.field textarea {
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--color-ink);
+  resize: vertical;
+  transition: border-color 0.15s var(--ease);
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--color-accent);
+}
+
+.error {
+  color: var(--color-accent-dark);
+  font-size: 0.8rem;
+}
+
+.submit {
+  background: var(--color-accent);
+  color: #FFFFFF;
+  border: none;
+  padding: 0.85rem;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.15s var(--ease), box-shadow 0.15s var(--ease), opacity 0.15s;
+}
+
+.submit:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.success {
+  background: var(--color-surface);
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius);
+  padding: var(--space-xl) var(--space-lg);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+}
+
+.success h2 {
+  margin-bottom: var(--space-sm);
+}
+
+.success p {
+  color: var(--color-ink-muted);
+  margin-bottom: var(--space-md);
+}
+
+.resetButton {
+  background: var(--color-dark);
+  color: #FFFFFF;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  cursor: pointer;
+}

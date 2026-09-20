@@ -22,7 +22,10 @@ export default function Courses() {
 
   return (
     <section className="container" style={{ paddingTop: 'var(--space-lg)', paddingBottom: 'var(--space-xl)' }}>
-      <h1 style={{ marginBottom: 'var(--space-sm)' }}>Course Catalog</h1>
+      <div className={styles.pageHeader}>
+        <h1>Course Catalog</h1>
+        <p className={styles.pageSubtitle}>Browse courses across every department, updated live.</p>
+      </div>
 
       <div className={styles.controls}>
         <input
@@ -49,9 +52,7 @@ export default function Courses() {
       {error && <ErrorMessage message={error} onRetry={() => window.location.reload()} />}
 
       {!loading && !error && filtered.length === 0 && (
-        <p style={{ color: 'var(--color-ink-muted)', padding: 'var(--space-lg) 0' }}>
-          No courses match your search.
-        </p>
+        <p className={styles.empty}>No courses match your search.</p>
       )}
 
       {!loading && !error && filtered.length > 0 && (

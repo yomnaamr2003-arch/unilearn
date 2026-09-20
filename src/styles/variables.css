@@ -1,41 +1,36 @@
 :root {
-  /* Colors — modern academic palette */
-  --color-bg: #F7F5F2;
+  --color-bg: #F6F4F0;
   --color-surface: #FFFFFF;
-  --color-ink: #14110D;
-  --color-ink-muted: #6F6A61;
-  --color-rule: #E7E2D9;
+  --color-ink: #1A1815;
+  --color-ink-muted: #6B6560;
+  --color-rule: #E5E0D8;
 
   --color-accent: #B5482E;
   --color-accent-dark: #8C3620;
   --color-accent-soft: #FBE9E2;
 
-  --color-dark: #1E1B16;
+  --color-dark: #1A1815;
 
-  /* Department accent colors */
   --dept-cs: #2E6B52;
   --dept-eng: #B5482E;
   --dept-business: #3D4A8C;
 
-  /* Fonts */
   --font-display: 'Fraunces', serif;
   --font-mono: 'IBM Plex Mono', monospace;
   --font-body: 'Space Grotesk', sans-serif;
 
-  /* Spacing scale */
   --space-xs: 0.5rem;
   --space-sm: 1rem;
   --space-md: 1.5rem;
   --space-lg: 3rem;
   --space-xl: 6rem;
 
-  /* Shadows & motion */
   --shadow-sm: 0 1px 3px rgba(20, 17, 13, 0.06);
   --shadow-md: 0 8px 24px rgba(20, 17, 13, 0.08);
   --shadow-lg: 0 16px 40px rgba(20, 17, 13, 0.12);
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
 
-  --radius: 10px;
-  --radius-sm: 6px;
+  --radius: 12px;
+  --radius-sm: 8px;
   --max-width: 1140px;
 }

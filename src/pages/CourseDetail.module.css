@@ -1,0 +1,119 @@
+.hero {
+  padding: var(--space-lg) 0 var(--space-xl);
+  color: #FFFFFF;
+}
+
+.heroInner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.back {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.85rem;
+  margin-bottom: var(--space-md);
+  transition: color 0.15s var(--ease);
+}
+
+.back:hover {
+  color: #FFFFFF;
+}
+
+.code {
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  opacity: 0.85;
+  margin-bottom: var(--space-xs);
+}
+
+.title {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  color: #FFFFFF;
+  margin-bottom: var(--space-sm);
+  line-height: 1.2;
+}
+
+.badges {
+  display: flex;
+  gap: var(--space-xs);
+  flex-wrap: wrap;
+}
+
+.badge {
+  background: rgba(255, 255, 255, 0.18);
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.body {
+  padding-top: var(--space-xl);
+  padding-bottom: var(--space-xl);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-xl);
+  align-items: start;
+}
+
+.sectionLabel {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-ink-muted);
+  font-weight: 600;
+  margin-bottom: var(--space-sm);
+}
+
+.description {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--color-ink);
+}
+
+.sidebar {
+  background: var(--color-surface);
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius);
+  padding: var(--space-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.sidebarTitle {
+  font-size: 0.95rem;
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--color-rule);
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-sm) 0;
+  border-bottom: 1px solid var(--color-rule);
+}
+
+.stat:last-child {
+  border-bottom: none;
+}
+
+.statLabel {
+  color: var(--color-ink-muted);
+  font-size: 0.9rem;
+}
+
+.statValue {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
