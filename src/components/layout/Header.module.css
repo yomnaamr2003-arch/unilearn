@@ -1,6 +1,5 @@
 .header {
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(10px);
+  background: var(--color-surface);
   border-bottom: 1px solid var(--color-rule);
   position: sticky;
   top: 0;
@@ -19,28 +18,36 @@
   font-family: var(--font-display);
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--color-dark);
+  color: var(--color-navy);
 }
 
 .nav {
   display: flex;
+  align-items: center;
   gap: var(--space-md);
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  font-weight: 500;
 }
 
 .nav a {
-  padding-bottom: 4px;
-  border-bottom: 2px solid transparent;
-  transition: color 0.2s var(--ease), border-color 0.2s var(--ease);
   color: var(--color-ink-muted);
+  transition: color 0.15s var(--ease);
 }
 
 .nav a:hover {
-  color: var(--color-ink);
+  color: var(--color-navy);
 }
 
 .active {
-  border-color: var(--color-accent) !important;
-  color: var(--color-ink) !important;
-  font-weight: 500;
+  color: var(--color-navy) !important;
+  font-weight: 600;
+}
+
+.cta {
+  background: var(--color-gold);
+  color: var(--color-navy);
+  padding: 0.6rem 1.3rem;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  font-size: 0.85rem;
 }

@@ -1,27 +1,82 @@
-.wrapper {
-  padding: var(--space-xl) var(--space-md);
+.hero {
+  background: var(--color-navy);
+  color: #FFFFFF;
+  padding: var(--space-xl) 0 var(--space-lg);
+}
+
+.heroInner {
   max-width: 620px;
 }
 
-.header {
-  margin-bottom: var(--space-lg);
+.eyebrow {
+  color: var(--color-gold);
+  letter-spacing: 0.05em;
+  font-size: 0.8rem;
+  margin-bottom: var(--space-sm);
 }
 
-.header h1 {
-  font-size: 2.2rem;
-  margin-bottom: var(--space-xs);
+.title {
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  color: #FFFFFF;
+  margin-bottom: var(--space-sm);
 }
 
 .subtitle {
-  color: var(--color-ink-muted);
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
 
-.form {
+.body {
+  padding: var(--space-xl) var(--space-md);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: var(--space-lg);
+  align-items: start;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.infoCard {
+  background: var(--color-surface);
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius);
+  padding: var(--space-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.infoIcon {
+  font-size: 1.5rem;
+  display: block;
+  margin-bottom: var(--space-xs);
+}
+
+.infoCard h3 {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.infoCard p {
+  color: var(--color-ink-muted);
+  font-size: 0.88rem;
+}
+
+.formPanel {
   background: var(--color-surface);
   border: 1px solid var(--color-rule);
   border-radius: var(--radius);
   padding: var(--space-lg);
   box-shadow: var(--shadow-sm);
+}
+
+.form {
   display: flex;
   flex-direction: column;
   gap: var(--space-md);
@@ -42,11 +97,12 @@
 .field input,
 .field textarea {
   padding: 0.75rem 1rem;
-  border: 1px solid var(--color-rule);
+  border: 1.5px solid var(--color-rule);
   border-radius: var(--radius-sm);
   font-family: var(--font-body);
   font-size: 0.95rem;
-  color: var(--color-ink);
+  color: var(--color-navy);
+  background: var(--color-surface);
   resize: vertical;
   transition: border-color 0.15s var(--ease);
 }
@@ -54,7 +110,8 @@
 .field input:focus,
 .field textarea:focus {
   outline: none;
-  border-color: var(--color-accent);
+  border-color: var(--color-gold);
+  box-shadow: 0 0 0 3px var(--color-gold-light);
 }
 
 .error {
@@ -63,13 +120,13 @@
 }
 
 .submit {
-  background: var(--color-accent);
-  color: #FFFFFF;
+  background: var(--color-gold);
+  color: var(--color-navy);
   border: none;
   padding: 0.85rem;
   border-radius: var(--radius-sm);
   font-family: var(--font-body);
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.95rem;
   cursor: pointer;
   box-shadow: var(--shadow-md);
@@ -87,12 +144,8 @@
 }
 
 .success {
-  background: var(--color-surface);
-  border: 1px solid var(--color-rule);
-  border-radius: var(--radius);
-  padding: var(--space-xl) var(--space-lg);
   text-align: center;
-  box-shadow: var(--shadow-sm);
+  padding: var(--space-lg) 0;
 }
 
 .success h2 {
@@ -105,11 +158,17 @@
 }
 
 .resetButton {
-  background: var(--color-dark);
+  background: var(--color-navy);
   color: #FFFFFF;
   border: none;
   padding: 0.7rem 1.5rem;
   border-radius: var(--radius-sm);
   font-family: var(--font-body);
   cursor: pointer;
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }

@@ -1,19 +1,21 @@
 :root {
-  --color-bg: #F6F4F0;
+  --color-bg: #F7F6F3;
   --color-surface: #FFFFFF;
-  --color-ink: #1A1815;
-  --color-ink-muted: #6B6560;
-  --color-rule: #E5E0D8;
+  --color-ink: #14161C;
+  --color-ink-muted: #5F6470;
+  --color-rule: #E3E1DB;
 
-  --color-accent: #B5482E;
-  --color-accent-dark: #8C3620;
-  --color-accent-soft: #FBE9E2;
+  --color-navy: #0F1E3D;
+  --color-navy-light: #1B3161;
+  --color-gold: #C9962C;
+  --color-gold-light: #F5E7C9;
 
-  --color-dark: #1A1815;
+  --color-accent: #C9962C;
+  --color-accent-dark: #A87A1E;
 
   --dept-cs: #2E6B52;
-  --dept-eng: #B5482E;
-  --dept-business: #3D4A8C;
+  --dept-eng: #C9962C;
+  --dept-business: #1B3161;
 
   --font-display: 'Fraunces', serif;
   --font-mono: 'IBM Plex Mono', monospace;
@@ -25,12 +27,12 @@
   --space-lg: 3rem;
   --space-xl: 6rem;
 
-  --shadow-sm: 0 1px 3px rgba(20, 17, 13, 0.06);
-  --shadow-md: 0 8px 24px rgba(20, 17, 13, 0.08);
-  --shadow-lg: 0 16px 40px rgba(20, 17, 13, 0.12);
+  --shadow-sm: 0 1px 3px rgba(15, 30, 61, 0.08);
+  --shadow-md: 0 8px 24px rgba(15, 30, 61, 0.12);
+  --shadow-lg: 0 16px 40px rgba(15, 30, 61, 0.16);
   --ease: cubic-bezier(0.4, 0, 0.2, 1);
 
   --radius: 12px;
   --radius-sm: 8px;
-  --max-width: 1140px;
+  --max-width: 1200px;
 }
