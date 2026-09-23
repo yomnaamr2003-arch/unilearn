@@ -23,8 +23,7 @@ export default function Home() {
             <p className={`mono ${styles.eyebrow}`}>ACADEMIC YEAR 2026–2027</p>
             <h1 className={styles.title}>A Legacy of Excellence.<br /><span>A Future of Impact.</span></h1>
             <p className={styles.subtitle}>
-              Browse the full UniLearn catalog — departments, instructors,
-              schedules, and everything you need to plan your semester.
+              Browse the UniLearn course catalog — explore departments, instructors, course details, and everything you need to plan your semester.
             </p>
             <div className={styles.actions}>
               <Link to="/courses" className={styles.ctaPrimary}>Explore Courses →</Link>

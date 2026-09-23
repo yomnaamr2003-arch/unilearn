@@ -1,7 +1,13 @@
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 .hero {
   background: var(--color-navy);
   color: #FFFFFF;
   padding: var(--space-xl) 0;
+  animation: fadeInUp 0.7s var(--ease);
 }
 
 .heroGrid {
@@ -42,6 +48,7 @@
 
 .values {
   padding: var(--space-xl) var(--space-md);
+  animation: fadeInUp 0.7s var(--ease) 0.15s backwards;
 }
 
 .valuesGrid {
@@ -86,6 +93,7 @@
   border-top: 1px solid var(--color-rule);
   border-bottom: 1px solid var(--color-rule);
   padding: var(--space-xl) 0;
+  animation: fadeInUp 0.7s var(--ease) 0.25s backwards;
 }
 
 .storyGrid {

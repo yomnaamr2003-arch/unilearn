@@ -51,3 +51,56 @@
   font-weight: 600;
   font-size: 0.85rem;
 }
+/* Mobile menu button */
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: var(--color-navy);
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Mobile menu */
+.mobileMenu {
+  display: none;
+}
+@media (max-width: 768px) {
+
+  .nav {
+    display: none;
+  }
+
+  .menuButton {
+    display: block;
+  }
+
+  .inner {
+    position: relative;
+  }
+
+  .mobileMenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: var(--color-surface);
+    border: 1px solid var(--color-rule);
+    padding: 10px 0;
+    min-width: 150px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .mobileMenu a {
+    padding: 12px 20px;
+    color: var(--color-ink-muted);
+    text-decoration: none;
+  }
+
+  .mobileMenu a:hover {
+    color: var(--color-navy);
+    background: #f5f5f5;
+  }
+}

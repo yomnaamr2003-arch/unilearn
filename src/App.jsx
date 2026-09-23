@@ -6,10 +6,12 @@ import Contact from './pages/Contact';
 import Courses from './pages/Courses';
 import CourseDetail from './pages/CourseDetail';
 import NotFound from './pages/NotFound';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
           <Route index element={<Home />} />

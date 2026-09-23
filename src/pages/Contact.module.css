@@ -1,7 +1,13 @@
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 .hero {
   background: var(--color-navy);
   color: #FFFFFF;
   padding: var(--space-xl) 0 var(--space-lg);
+  animation: fadeInUp 0.7s var(--ease);
 }
 
 .heroInner {
@@ -29,6 +35,7 @@
 
 .body {
   padding: var(--space-xl) var(--space-md);
+   animation: fadeInUp 0.7s var(--ease) 0.15s backwards;
 }
 
 .grid {

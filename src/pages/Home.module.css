@@ -1,7 +1,13 @@
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
 .hero {
   background: var(--color-navy);
   color: #FFFFFF;
   padding: var(--space-xl) 0;
+   animation: fadeInUp 0.7s var(--ease);
 }
 
 .heroGrid {
@@ -107,6 +113,7 @@
 .departments {
   background: var(--color-bg);
   padding: var(--space-lg) var(--space-md) var(--space-xl);
+   animation: fadeInUp 0.7s var(--ease) 0.15s backwards;
 }
 
 .sectionTitle {

@@ -22,9 +22,7 @@ export default function About() {
             <p className={`mono ${styles.eyebrow}`}>ABOUT UNILEARN</p>
             <h1 className={styles.title}>Built for course discovery.</h1>
             <p className={styles.subtitle}>
-              UniLearn is a course catalog and registration platform designed
-              to make browsing academic offerings simple and transparent —
-              for every student, in every department.
+              UniLearn is a university learning portal designed to make exploring academic courses simple and accessible for students.
             </p>
           </div>
           <div
