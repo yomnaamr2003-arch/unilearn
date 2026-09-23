@@ -1,16 +1,44 @@
-# React + Vite
+# UniLearn — Course Catalog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A multi-page React application for browsing university courses, built with React Router and a live REST API.
 
-Currently, two official plugins are available:
+## Live Demo
+https://unilearn-iota.vercel.app/?utm_source=chatgpt.com
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
+- Home, About, Contact, and Courses pages
+- Dynamic course detail pages via `/courses/:id`
+- Live course data fetched from a REST API (MockAPI)
+- Search and department filtering
+- Contact form with validation and submission states
+- Loading and error states throughout
+- Fully responsive design
 
-## React Compiler
+## Technologies Used
+- React 19
+- React Router v7
+- Vite
+- CSS Modules
+- MockAPI (REST backend)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Running Locally
 
-## Expanding the ESLint configuration
+```bash
+git clone https://github.com/yomnaamr2003-arch/unilearn.git
+cd unilearn
+npm install
+npm run dev
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Then open `http://localhost:5173`.
+
+## Project Structure
+
+```
+src/
+├── components/   Reusable UI (Header, Footer, CourseCard, Loader, ErrorMessage)
+├── pages/        Route-level pages
+├── hooks/        Custom data-fetching hooks (useCourses, useCourse)
+├── services/     API layer
+└── styles/       Design tokens and global styles
+```
